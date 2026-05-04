@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gowtham — Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- SCROLL PROGRESS -->
+<div class="progress-bar"></div>
+
+<!-- AMBIENT ORBS -->
+<div class="orb-field">
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="orb orb-c"></div>
+  <div class="orb orb-d"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Gowtham Kumar Challa.</a>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="position:relative; overflow:hidden;">
+  <div class="hero-deco">
+    <div class="hero-deco-line"></div>
+    <div class="hero-deco-line"></div>
+    <div class="hero-deco-line"></div>
+  </div>
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <div class="hero-badge"><span class="live-dot"></span> Open to Opportunities</div>
+
+    <h1 class="hero-name">
+      Hi, I'm
+      <span class="g">Gowtham Kumar Challa</span>
+    </h1>
+
+    <p class="hero-role">
+      <span class="hero-role-typing"></span>
+    </p>
+
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-p"><i class="fas fa-rocket"></i> View My Work</a>
+      <a href="#" class="btn btn-s open-resume"><i class="fas fa-file-alt"></i> View Resume</a>
+    </div>
+
+    <div class="hero-social">
+      <a href="https://github.com/Karthik22q" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/gowtham-kumar-challa-b75982285/" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://x.com/GowthamkumarCh2" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="challagowtham5559@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <!-- RIGHT — PROFILE PIC -->
+  <div class="hero-right">
+    <div class="avatar-container">
+      <div class="avatar-spin-ring"></div>
+      <div class="avatar-spin-ring-2"></div>
+      <div class="avatar-particle"></div>
+      <div class="avatar-particle"></div>
+      <div class="avatar-particle"></div>
+
+      <div class="avatar-photo">
+        <!-- Replace src with your photo: <img src="photo.jpg" alt="Gowtham"> -->
+        <div class="avatar-initials"><img src="linkedin.png" alt=""></div>
+      </div>
+      <div class="avatar-glow"></div>
+
+      <div class="avatar-label avatar-label-1"><span>Full Stack</span> Dev</div>
+      <div class="avatar-label avatar-label-2">MERN <span>Stack</span></div>
+      <div class="avatar-label avatar-label-3">Java <span>Fullstack</span></div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-ind" style="z-index:10;">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip reveal">
+  <div class="stat-gc reveal d1">
+    <div class="stat-num" data-target="10" data-suffix="+">0+</div>
+    <div class="stat-lbl">Projects Built</div>
+  </div>
+  <div class="stat-gc reveal d2">
+    <div class="stat-num" data-target="6" data-suffix="+">0+</div>
+    <div class="stat-lbl">Technologies</div>
+  </div>
+  <div class="stat-gc reveal d3">
+    <div class="stat-num" data-target="500" data-suffix="+">0+</div>
+    <div class="stat-lbl">Hours Coded</div>
+  </div>
+  <div class="stat-gc reveal d4">
+    <div class="stat-num" data-target="100" data-suffix="%">0%</div>
+    <div class="stat-lbl">Dedication</div>
+  </div>
+</div>
+
+<!-- RESUME POPUP OVERLAY -->
+<div id="resumeOverlay" class="resume-overlay">
+  <div class="resume-modal">
+    <div class="resume-modal-header">
+      <div class="resume-modal-title"><span>Gowtham</span> — Resume</div>
+      <div class="resume-modal-actions">
+        <button id="resumeDownload" class="btn btn-gold" style="padding:10px 22px; font-size:13px;">
+          <i class="fas fa-download"></i> Download
+        </button>
+        <button id="resumeClose" class="resume-close"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+
+    <div class="resume-body">
+      <div class="resume-doc">
+
+        <!-- Header -->
+        <div class="resume-header-section">
+          <div class="resume-name-block">
+            <h1><span>Gowtham</span></h1>
+            <h2>Full Stack Developer &nbsp;·&nbsp; MERN Stack &nbsp;·&nbsp; Java Full Stack</h2>
+            <div class="skill-tags" style="margin-top:12px;">
+              <span class="stag sv">Fresher</span>
+              <span class="stag sc">Available</span>
+              <span class="stag sg">Open to Work</span>
+            </div>
+          </div>
+          <div class="resume-contact-block">
+            <p>
+              📧 <a href="mailto:gowtham@email.com">gowtham@email.com</a><br>
+              🔗 <a href="#">linkedin.com/in/gowtham</a><br>
+              💻 <a href="#">github.com/gowtham</a><br>
+              📱 +91 XXXXX XXXXX<br>
+              📍 India
+            </p>
+          </div>
+        </div>
+
+        <!-- Objective -->
+        <div class="resume-section">
+          <div class="resume-section-title"><i class="fas fa-bullseye"></i> Objective</div>
+          <p style="color:var(--muted);line-height:1.8;font-size:14px;font-weight:300;">
+            Enthusiastic and self-driven Computer Science fresher with strong foundations in Full Stack Web Development.
+            Proficient in MERN Stack, Java Full Stack, and modern frontend technologies. Passionate about building
+            scalable and user-friendly web applications. Seeking an opportunity to apply my skills, grow professionally,
+            and contribute meaningfully to a dynamic development team.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+          <div class="resume-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <div class="resume-item-role">B.Tech — Computer Science & Engineering</div>
+              <div class="resume-item-period">2021 – 2025</div>
+            </div>
+            <div class="resume-item-company">XYZ University, India</div>
+            <div class="resume-item-desc" style="color:var(--muted);font-size:13px;">CGPA: 8.5 / 10 &nbsp;·&nbsp; Relevant coursework: Data Structures, DBMS, OS, Web Technologies, OOP with Java</div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-section">
+          <div class="resume-section-title"><i class="fas fa-code"></i> Projects</div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <div class="resume-item-role">Full Stack E-Commerce Platform</div>
+              <div class="resume-item-period">2024</div>
+            </div>
+            <div class="resume-item-company">MERN Stack &nbsp;·&nbsp; Personal Project</div>
+            <ul class="resume-item-desc">
+              <li>Built a complete e-commerce web app with React.js, Node.js, Express.js, and MongoDB</li>
+              <li>Implemented JWT authentication, cart management, and Razorpay payment integration</li>
+              <li>Deployed on Vercel (frontend) and Render (backend) with CI/CD pipeline</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <div class="resume-item-role">Real-Time Task Manager</div>
+              <div class="resume-item-period">2024</div>
+            </div>
+            <div class="resume-item-company">MERN + Socket.io &nbsp;·&nbsp; Academic Project</div>
+            <ul class="resume-item-desc">
+              <li>Developed a collaborative task management app with real-time updates using Socket.io</li>
+              <li>Implemented drag-and-drop board, role-based access, and email notifications</li>
+              <li>Used React Context + useReducer for state, REST API with Express.js backend</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <div class="resume-item-role">Blog Platform — Java Spring Boot</div>
+              <div class="resume-item-period">2023</div>
+            </div>
+            <div class="resume-item-company">Java Full Stack &nbsp;·&nbsp; Personal Project</div>
+            <ul class="resume-item-desc">
+              <li>Created a full-featured blog platform with Spring Boot REST API and React.js frontend</li>
+              <li>Used Spring Security + JWT for auth, MySQL for persistence, Hibernate ORM</li>
+              <li>Implemented rich text editor, category filters, and comment system</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <div class="resume-item-role">Premium Developer Portfolio</div>
+              <div class="resume-item-period">2025</div>
+            </div>
+            <div class="resume-item-company">HTML · CSS · JavaScript &nbsp;·&nbsp; Personal</div>
+            <ul class="resume-item-desc">
+              <li>Designed and built a stunning animated portfolio with glassmorphism and gradient effects</li>
+              <li>Custom cursor, scroll animations, 3D tilt cards, typing effects, and magnetic buttons</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="resume-section">
+          <div class="resume-section-title"><i class="fas fa-layer-group"></i> Technical Skills</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:13px;color:var(--muted);line-height:1.9;">
+            <div>
+              <strong style="color:var(--text);">Frontend:</strong><br>
+              HTML5, CSS3, JavaScript ES6+, React.js, TypeScript, Tailwind CSS, Bootstrap, Redux
+            </div>
+            <div>
+              <strong style="color:var(--text);">Backend:</strong><br>
+              Node.js, Express.js, Java, Spring Boot, Spring Security, REST APIs, GraphQL
+            </div>
+            <div>
+              <strong style="color:var(--text);">Database:</strong><br>
+              MongoDB, MySQL, PostgreSQL, Mongoose, Hibernate
+            </div>
+            <div>
+              <strong style="color:var(--text);">Tools & Others:</strong><br>
+              Git, GitHub, Figma, Postman, VS Code, Docker (basics), Vercel, Render
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="resume-section">
+          <div class="resume-section-title"><i class="fas fa-certificate"></i> Certifications</div>
+          <div class="resume-skills-row">
+            <span class="stag sv">Full Stack Web Dev — Udemy</span>
+            <span class="stag sc">Java DSA — GeeksForGeeks</span>
+            <span class="stag sp">UI/UX Fundamentals — Coursera</span>
+            <span class="stag sg">React.js — Scrimba</span>
+            <span class="stag so">MongoDB — M001 Atlas</span>
+          </div>
+        </div>
+
+      </div><!-- /resume-doc -->
+    </div><!-- /resume-body -->
+  </div><!-- /resume-modal -->
+</div><!-- /resume-overlay -->
+
+<footer>Made with 💜 by <span class="hl">Gowtham</span> &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; All Rights Reserved</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

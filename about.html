@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Gowtham</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="cursor-dot"></div><div class="cursor-ring"></div><div class="progress-bar"></div>
+<div class="orb-field"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div><div class="orb orb-d"></div></div>
+
+<nav>
+  <a href="index.html" class="logo">Gowtham.</a>
+  <ul>
+    <li><a href="index.html">Home</a></li><li><a href="about.html" class="active">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li>
+    <li><a href="resume.html">Resume</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-wrapper">
+  <section class="section">
+    <div class="section-tag reveal">Who I Am</div>
+    <h1 class="section-title reveal d1">About <span class="g">Me</span></h1>
+
+    <div class="about-grid">
+      <div class="about-avatar-wrap reveal-l d2">
+        <div class="about-avatar-box">
+          <div class="about-photo-ring"></div>
+          <div class="about-photo">
+            <!-- Replace with: <img src="photo.jpg" alt="Gowtham"> -->
+            🧑‍💻
+          </div>
+        </div>
+        <div class="about-social">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:gowtham@email.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="reveal-r d2">
+        <div class="section-tag" style="margin-bottom:16px;">Fresh Graduate · 2025</div>
+        <div class="about-text">
+          <h3>Passionate Developer &<br><em>Creative Problem Solver</em></h3>
+          <p>I'm a Computer Science fresher with a deep passion for Full Stack Web Development. I love building things from scratch — from designing beautiful UIs to crafting robust backend systems.</p>
+          <p>My journey started with curiosity about how websites work, and it grew into a full-fledged skill set spanning MERN Stack, Java Spring Boot, and modern design principles.</p>
+          <p>I'm eager to take on real-world challenges, collaborate with talented teams, and grow into a world-class engineer.</p>
+        </div>
+        <div class="about-stats">
+          <div class="about-stat reveal d3"><div class="about-stat-n">10+</div><div class="about-stat-l">Projects Built</div></div>
+          <div class="about-stat reveal d4"><div class="about-stat-n">6+</div><div class="about-stat-l">Technologies</div></div>
+          <div class="about-stat reveal d5"><div class="about-stat-n">500+</div><div class="about-stat-l">Hours Coded</div></div>
+          <div class="about-stat reveal d6"><div class="about-stat-n">100%</div><div class="about-stat-l">Commitment</div></div>
+        </div>
+        <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-p"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          <a href="resume.html" class="btn btn-s open-resume"><i class="fas fa-file-alt"></i> View Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Resume popup (same) -->
+<div id="resumeOverlay" class="resume-overlay">
+  <div class="resume-modal">
+    <div class="resume-modal-header">
+      <div class="resume-modal-title"><span>Gowtham</span> — Resume</div>
+      <div class="resume-modal-actions">
+        <button id="resumeDownload" class="btn btn-gold" style="padding:10px 22px;font-size:13px;"><i class="fas fa-download"></i> Download</button>
+        <button id="resumeClose" class="resume-close"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="resume-body">
+      <div class="resume-doc" style="text-align:center;padding:60px 40px;">
+        <p style="color:var(--muted);font-size:15px;">Full resume preview available on the <a href="resume.html" style="color:var(--violet);">Resume page</a>.</p>
+        <div style="margin-top:24px;">
+          <a href="resume.html" class="btn btn-p"><i class="fas fa-eye"></i> Open Resume Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>Made with 💜 by <span class="hl">Gowtham</span> &nbsp;·&nbsp; 2025</footer>
+<script src="script.js"></script>
+</body>
+</html>

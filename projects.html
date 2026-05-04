@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Gowtham</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="cursor-dot"></div><div class="cursor-ring"></div><div class="progress-bar"></div>
+<div class="orb-field"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div><div class="orb orb-d"></div></div>
+
+<nav>
+  <a href="index.html" class="logo">Gowtham.</a>
+  <ul>
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="resume.html">Resume</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-wrapper">
+  <section class="section">
+    <div class="section-tag reveal">Portfolio</div>
+    <h1 class="section-title reveal d1">Featured <span class="g">Projects</span></h1>
+    <p class="section-sub reveal d2">Real projects built with passion. Each one pushed my skills further.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal d1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,rgba(168,85,247,.2),rgba(6,182,212,.15));">
+          🛒
+          <div class="project-thumb-overlay"><div class="proj-links"><a href="#" class="proj-link">🔗 Live</a><a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a></div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="stag sv">React.js</span><span class="stag sg">Node.js</span><span class="stag sc">MongoDB</span><span class="stag sp">JWT</span></div>
+          <h3 class="project-title">Full Stack E-Commerce</h3>
+          <p class="project-desc">Complete shopping platform with cart, wishlist, payment gateway (Razorpay), admin dashboard, and order tracking. MERN Stack with Redux state management.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal d2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(168,85,247,.2));">
+          ☕
+          <div class="project-thumb-overlay"><div class="proj-links"><a href="#" class="proj-link">🔗 Live</a><a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a></div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="stag sp">Java</span><span class="stag sg">Spring Boot</span><span class="stag sc">MySQL</span><span class="stag so">React.js</span></div>
+          <h3 class="project-title">Java Blog Platform</h3>
+          <p class="project-desc">Full-featured blog with Spring Boot REST API, Spring Security JWT auth, Hibernate ORM + MySQL database, and a clean React.js frontend with rich text editor.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal d3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,rgba(16,185,129,.15),rgba(6,182,212,.15));">
+          📋
+          <div class="project-thumb-overlay"><div class="proj-links"><a href="#" class="proj-link">🔗 Live</a><a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a></div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="stag sv">Socket.io</span><span class="stag sg">MongoDB</span><span class="stag sc">React</span><span class="stag so">Node.js</span></div>
+          <h3 class="project-title">Real-Time Task Manager</h3>
+          <p class="project-desc">Collaborative task board with real-time updates, drag-and-drop Kanban board, role-based access control, and email notification system.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal d1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(239,68,68,.12));">
+          💬
+          <div class="project-thumb-overlay"><div class="proj-links"><a href="#" class="proj-link">🔗 Live</a><a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a></div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="stag so">React</span><span class="stag sp">Node.js</span><span class="stag sv">Socket.io</span><span class="stag sc">MongoDB</span></div>
+          <h3 class="project-title">Real-Time Chat App</h3>
+          <p class="project-desc">Messaging app with group rooms, private DMs, file sharing, typing indicators, read receipts, emoji support, and full message history.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal d2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,rgba(99,102,241,.2),rgba(168,85,247,.15));">
+          📊
+          <div class="project-thumb-overlay"><div class="proj-links"><a href="#" class="proj-link">🔗 Live</a><a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a></div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="stag sv">React</span><span class="stag sc">TypeScript</span><span class="stag sg">Chart.js</span><span class="stag sp">REST API</span></div>
+          <h3 class="project-title">Analytics Dashboard</h3>
+          <p class="project-desc">Interactive data analytics dashboard with real-time charts, customizable widgets, dark theme, and CSV export. Built with TypeScript + React + Chart.js.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal d3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,rgba(6,182,212,.15),rgba(16,185,129,.12));">
+          🌐
+          <div class="project-thumb-overlay"><div class="proj-links"><a href="#" class="proj-link">🔗 Live</a><a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a></div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="stag sc">HTML</span><span class="stag sg">CSS</span><span class="stag sv">JavaScript</span><span class="stag sp">Animations</span></div>
+          <h3 class="project-title">Premium Portfolio</h3>
+          <p class="project-desc">This very portfolio — designed from scratch with glassmorphism, gradient backgrounds, custom cursor, 3D tilt effects, and stunning animations.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<footer>Made with 💜 by <span class="hl">Gowtham</span> &nbsp;·&nbsp; 2025</footer>
+<script src="script.js"></script>
+</body>
+</html>
